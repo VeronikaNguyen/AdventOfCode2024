@@ -12,6 +12,7 @@ class Day1:
         self.left_number_to_count_map = defaultdict(int)
         self.right_number_to_count_map = defaultdict(int)
         self.parse_input(lines)
+        self.prepare_input()
 
     def part1(self) -> int:
         return self.compute_total_distance_between_lists()
@@ -25,6 +26,7 @@ class Day1:
             self.left_list.append(int(left))
             self.right_list.append(int(right))
 
+    def prepare_input(self) -> None:
         self.left_list.sort()
         self.right_list.sort()
 
