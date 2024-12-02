@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Day1:
     left_list: list[int]
     right_list: list[int]
@@ -22,6 +23,7 @@ class Day1:
 
     def parse_input(self, lines: list[str]) -> None:
         for line in lines:
+            assert (len(line.split()), 2)
             [left, right] = line.split()
             self.left_list.append(int(left))
             self.right_list.append(int(right))
