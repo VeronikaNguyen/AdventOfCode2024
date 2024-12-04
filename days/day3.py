@@ -5,7 +5,6 @@ class Day3:
     input: list[str]
 
     def __init__(self, lines: list[str]):
-        assert (len(lines) > 0)
         self.input = lines
 
     def part1(self) -> int:
